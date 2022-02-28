@@ -45,7 +45,7 @@ ex4 = (num1, num2, num3) => {
     return num2;
   } else num3 > (num1 && num2);
   {
-    return num2;
+    return num3;
   }
 };
 console.log(ex4(3, 7, 22));
@@ -55,15 +55,16 @@ console.log(ex4(3, 7, 22));
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
 ex5 = (num1, num2) => {
-  if ((num1 && num1) >= 40 && 60 > (num1 && num1)) {
-    return console.log("they are in 40-60 range");
+  let result;
+  if ((num1 && num2) >= 40 && 60 > (num1 && num2)) {
+    return (result = "they are in 40-60 range");
   }
-
-  if ((num1 && num1) >= 70 && 100 > (num1 && num1)) {
-    return console.log("they are in 70-100 range");
+  if ((num1 && num2) >= 70 && 100 > (num1 && num2)) {
+    return (result = "they are in 70-100 range");
   } else {
-    return console.log("they are not in a acceptable range");
+    return (result = "they are not in a acceptable range");
   }
+  return result;
 };
 console.log(ex5(55, 59));
 /*
@@ -71,9 +72,15 @@ console.log(ex5(55, 59));
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
-
+const ex6 = function (str, copyNum) {
+  let theString = "";
+  for (let i = 0; i < copyNum; i++) {
+    theString += str + " ";
+  }
+  return theString;
+};
+console.log(ex6("hi", 3));
 /*
-
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
