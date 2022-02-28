@@ -84,12 +84,28 @@ console.log(ex6("hi", 3));
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
-
+// why dont work?
+const ex7 = function (str) {
+  if (str.toLowerCase(str.startsWith("los" || "new"))) {
+    return str;
+  } else {
+    return false;
+  }
+};
+console.log(ex7("los angeles"));
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
 
+const ex8 = (arr) => {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i];
+  }
+  return result;
+};
+console.log(ex8([123, 324, 435]));
 /*
 
 9)
