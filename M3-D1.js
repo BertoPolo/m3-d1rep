@@ -112,8 +112,10 @@ console.log(ex8([123, 324, 435]));
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
 
-/*
+const ex9 = () => {};
+console.log(ex9());
 
+/*
 10)
 
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
