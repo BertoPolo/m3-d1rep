@@ -38,6 +38,7 @@ console.log(ex3("hello mates", 2));
  Create a function to find the largest of three given integers.
 */
 ex4 = (num1, num2, num3) => {
+  /* Math.max() */
   if (num1 > (num2 && num3)) {
     return num1;
   }
@@ -112,18 +113,24 @@ console.log(ex8([123, 324, 435]));
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
 
-const ex9 = () => {};
-console.log(ex9());
+const ex9 = (arr) => {
+  return arr.includes(1 || 3);
+};
+console.log(ex9([123, 144]));
+
+/* 10)
+Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+ */
+const ex10 = (arr) => {
+  return !arr.includes(1 || 3);
+};
+console.log(ex10([123, 144]));
+
+/* 11)
+Create a function to find the longest string from a given array of strings.
+ */
 
 /*
-10)
-
-Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
-
-11)
-
-Create a function to find the longest string from a given array of strings.
-
 12)
 
 Create a function to find the types of a given angle.
