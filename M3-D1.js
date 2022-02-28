@@ -4,30 +4,68 @@
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
 ex1 = (a, b) => {
-  a + b;
+  if (a === b) {
+    return a * b;
+  } else {
+    return a + b;
+  }
 };
-ex1(4, 2);
+console.log(ex1(4, 2));
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
-
+ex2 = (num1, num2) => {
+  if (num1 || num2 === 50 || num1 + num2 === 50) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(ex2(4, 2));
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
+ex3 = (str, pos2) => {
+  let stringToReturn = str.slice(0, pos2);
+  return stringToReturn;
+};
+console.log(ex3("hello mates", 2));
 
 /*
-
 4)
  Create a function to find the largest of three given integers.
 */
+ex4 = (num1, num2, num3) => {
+  if (num1 > (num2 && num3)) {
+    return num1;
+  }
+  if (num2 > (num1 && num3)) {
+    return num2;
+  } else num3 > (num1 && num2);
+  {
+    return num2;
+  }
+};
+console.log(ex4(3, 7, 22));
 
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
+ex5 = (num1, num2) => {
+  if ((num1 && num1) >= 40 && 60 > (num1 && num1)) {
+    return console.log("they are in 40-60 range");
+  }
 
+  if ((num1 && num1) >= 70 && 100 > (num1 && num1)) {
+    return console.log("they are in 70-100 range");
+  } else {
+    return console.log("they are not in a acceptable range");
+  }
+};
+console.log(ex5(55, 59));
 /*
 6) 
 
